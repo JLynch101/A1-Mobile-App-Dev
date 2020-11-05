@@ -102,8 +102,9 @@ class ExpenseController {
     }
 
     fun dummyData() {
-        expenses.create(ExpenseModel(amount = "New York New York", description = "So Good They Named It Twice"))
-        expenses.create(ExpenseModel(amount= "Ring of Kerry", description = "Some place in the Kingdom"))
-        expenses.create(ExpenseModel(amount = "Waterford City", description = "You get great Blaas Here!!"))
+        expenses.create(ExpenseModel(orderno = "009", amount = "4500", description = "Yearly car maintenance", date = "23/08/2020"))
+        expenses.create(ExpenseModel(orderno = "056", amount = "500", description = "House Tax", date = "02/09/2020"))
+        expenses.create(ExpenseModel(orderno = "078", amount = "450.99", description = "Car Tax", date = "08/09/2020"))
+        expenses.create(ExpenseModel(orderno = "145", amount = "1200", description = "Monthly Rent", date = "15/09/2020"))
     }
 }

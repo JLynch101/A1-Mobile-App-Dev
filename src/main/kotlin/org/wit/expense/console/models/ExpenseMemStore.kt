@@ -32,8 +32,11 @@ class ExpenseMemStore : ExpenseStore {
     override fun update(expense: ExpenseModel) {
         var foundExpense = findOne(expense.id!!)
         if (foundExpense != null) {
+            foundExpense.orderno = expense.orderno
             foundExpense.amount = expense.amount
             foundExpense.description = expense.description
+            foundExpense.date = expense.date
+
         }
     }
 

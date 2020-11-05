@@ -56,31 +56,46 @@ class ExpenseView {
         fun addExpenseData(expense: ExpenseModel): Boolean {
             colored {
                 println()
+                print("Enter the Order Number : ".blue.bold)
+                expense.orderno = readLine()!!
                 print("Enter a Amount (€) : ".blue.bold)
                 expense.amount = readLine()!!
                 print("Enter a Description of Expense : ".blue.bold)
                 expense.description = readLine()!!
+                print("Enter the Date of the Expense : ".blue.bold)
+                expense.date = readLine()!!
             }
-                return expense.amount.isNotEmpty() && expense.description.isNotEmpty()
+                return expense.orderno.isNotEmpty() && expense.amount.isNotEmpty() && expense.description.isNotEmpty() && expense.date.isNotEmpty()
 
         }
 
         fun updateExpenseData(expense: ExpenseModel): Boolean {
 
+            var tempOrderno: String?
             var tempAmount: String?
             var tempDescription: String?
+            var tempDate: String?
 
             if (expense != null) {
+                colored {
+                    print("Enter a new order number for ".blue.bold + expense.orderno + " ] : ".blue.bold)}
+                tempOrderno = readLine()!!
                 colored {
                 print("Enter a new amount for [ € ".blue.bold + expense.amount + " ] : ".blue.bold)}
                 tempAmount = readLine()!!
                 colored {
                 print("Enter a new Description for [ ".blue.bold + expense.description + " ] : ".blue.bold)}
                 tempDescription = readLine()!!
+                colored {
+                    print("Enter a new Date for [ ".blue.bold + expense.date + " ] : ".blue.bold)}
+                tempDate = readLine()!!
 
-                if (!tempAmount.isNullOrEmpty() && !tempDescription.isNullOrEmpty()) {
+
+                if (!tempOrderno.isNullOrEmpty() && !tempAmount.isNullOrEmpty() && !tempDescription.isNullOrEmpty() && !tempDate.isNullOrEmpty()) {
+                    expense.orderno = tempOrderno
                     expense.amount = tempAmount
                     expense.description = tempDescription
+                    expense.date = tempDate
                     return true
                 }
             }
