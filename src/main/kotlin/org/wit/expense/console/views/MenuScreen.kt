@@ -3,6 +3,8 @@ package org.wit.expense.console.views
 import javafx.application.Platform
 import javafx.geometry.Orientation
 import org.wit.expense.console.controllers.ExpenseUIController
+import javafx.scene.paint.Color
+
 import tornadofx.*
 
 class MenuScreen : View("Expense Main Menu") {
@@ -17,6 +19,17 @@ class MenuScreen : View("Expense Main Menu") {
 
                 isDefaultButton = true
                 useMaxWidth = true
+                style {
+                    backgroundColor += Color.LIGHTGREEN
+                    borderColor += box(
+                            top = Color.RED,
+                            right = Color.DARKGREEN,
+                            left = Color.ORANGE,
+                            bottom = Color.PURPLE)
+                    fontFamily = "Arial"
+                    fontSize = 18.px
+
+                }
                 action {
                     runAsyncWithProgress {
                         expenseUIController.loadAddScreen()
@@ -28,6 +41,17 @@ class MenuScreen : View("Expense Main Menu") {
 
                 isDefaultButton = true
                 useMaxWidth = true
+                style {
+                    backgroundColor += Color.LIGHTGREEN
+                    borderColor += box(
+                            top = Color.RED,
+                            right = Color.DARKGREEN,
+                            left = Color.ORANGE,
+                            bottom = Color.PURPLE)
+                    fontFamily = "Arial"
+                    fontSize = 18.px
+
+                }
                 action {
                     runAsyncWithProgress {
                         expenseUIController.loadListScreen()
@@ -39,6 +63,17 @@ class MenuScreen : View("Expense Main Menu") {
 
                 isDefaultButton = true
                 useMaxWidth = true
+                style {
+                    backgroundColor += Color.LIGHTGREEN
+                    borderColor += box(
+                            top = Color.RED,
+                            right = Color.DARKGREEN,
+                            left = Color.ORANGE,
+                            bottom = Color.PURPLE)
+                    fontFamily = "Arial"
+                    fontSize = 18.px
+
+                }
                 action {
                     runAsyncWithProgress {
                         Platform.exit();
