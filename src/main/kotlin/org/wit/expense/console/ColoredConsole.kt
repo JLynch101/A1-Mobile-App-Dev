@@ -9,6 +9,8 @@ import com.github.mm.coloredconsole.ColoredConsole.Style
 import com.github.mm.coloredconsole.ColoredConsole.Style.NotApplied
 import java.util.regex.Pattern
 
+//ColoredConsole, used to add colour and formating to the console verison of the application
+
 interface ColoredConsole {
 
     sealed class Style {

@@ -1,3 +1,4 @@
+//ExpenseMemStore is used to keep temporary inputs from the user
 package org.wit.expense.console.models
 
 import mu.KotlinLogging

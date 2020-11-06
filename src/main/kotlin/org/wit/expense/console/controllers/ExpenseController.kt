@@ -1,3 +1,6 @@
+
+// Expense Controller, which contains functions used in the application
+
 package org.wit.expense.console.controllers
 
 import com.github.mm.coloredconsole.colored

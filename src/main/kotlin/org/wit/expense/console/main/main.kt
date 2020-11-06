@@ -1,3 +1,4 @@
+//Main.kt is used to run the the console version of the application
 package org.wit.expense.console.main
 
 

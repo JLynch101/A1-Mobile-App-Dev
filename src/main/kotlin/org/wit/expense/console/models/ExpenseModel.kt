@@ -1,3 +1,4 @@
+//ExpenseModel
 package org.wit.expense.console.models
 
 data class ExpenseModel(var id: Long? = 0,

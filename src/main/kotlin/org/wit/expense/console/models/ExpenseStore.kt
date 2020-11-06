@@ -1,3 +1,4 @@
+//ExpenseStore
 package org.wit.expense.console.models
 
 interface ExpenseStore {

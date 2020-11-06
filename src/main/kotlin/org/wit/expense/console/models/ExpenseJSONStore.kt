@@ -1,3 +1,4 @@
+//ExpenseJSON Store used to create a JSON file where the data is stored
 package org.wit.expense.console.models
 
 import com.google.gson.Gson
