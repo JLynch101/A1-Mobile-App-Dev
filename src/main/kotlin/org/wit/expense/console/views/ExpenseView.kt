@@ -26,7 +26,8 @@ class ExpenseView {
             println(" 3. List All Expenses".green.bold)
             println(" 4. Search Expenses".green.bold)
             println(" 5. Delete Expense".blue.bold)
-            println("-1. Exit".red.bold)
+            println(" 6. Add Preset Data".red.bold)
+            println("-1. Exit".blue.bold)
             println()
             print("Enter Option : ".yellow.bold)
         }

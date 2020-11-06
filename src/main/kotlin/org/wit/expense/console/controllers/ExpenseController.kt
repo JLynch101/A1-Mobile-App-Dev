@@ -36,7 +36,7 @@ class ExpenseController {
                 3 -> list()
                 4 -> search()
                 5 -> delete()
-                -99 -> dummyData()
+                6 -> dummyData()
                 -1 -> println("Exiting App")
                 else -> println("Invalid Option")
             }
@@ -109,5 +109,7 @@ class ExpenseController {
         expenses.create(ExpenseModel(orderno = "056", amount = "500", description = "House Tax", date = "02/09/2020"))
         expenses.create(ExpenseModel(orderno = "078", amount = "450.99", description = "Car Tax", date = "08/09/2020"))
         expenses.create(ExpenseModel(orderno = "145", amount = "1200", description = "Monthly Rent", date = "15/09/2020"))
+        colored {
+        println("Preset data has been added".blue.bold)}
     }
 }
